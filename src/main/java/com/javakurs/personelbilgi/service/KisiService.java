@@ -19,6 +19,7 @@ public class KisiService {
     
     @EJB
     private KisiFacade kisiFacade;
+    
 
     public void ekle(Kisi p_kisi)
     {
