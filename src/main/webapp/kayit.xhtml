@@ -9,7 +9,7 @@
     </h:head>
     <h:body>
         <h:form>
-            <p:panelGrid columns="2">
+            <p:panelGrid columns="2" style="margin-top:60px">
                 <f:facet name="header">
                     <p:outputLabel value="Kişi Ekleme"></p:outputLabel>
                 </f:facet>
@@ -22,7 +22,7 @@
                 <p:outputLabel value="Ev Tel:"></p:outputLabel>
                 <p:inputText value="#{kayitBean.evTel.telNo}"></p:inputText>
                 <f:facet name="footer">
-                    <p:outputLabel value="Buton eklenecek"></p:outputLabel>
+                    <p:commandButton value="Ekle" action="#{kayitBean.ekle()}" update="@form"></p:commandButton>                   
                 </f:facet>
             </p:panelGrid>
         </h:form>

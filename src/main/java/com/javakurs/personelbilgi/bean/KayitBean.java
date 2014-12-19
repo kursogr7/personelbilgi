@@ -64,16 +64,20 @@ public class KayitBean {
     {
         
         //one-to-many çift taraflı ikisinden de set etmek gerekiyor.
-        List<Telefon> telefonList = new ArrayList<Telefon>();
+        List<Telefon> telefonList = new ArrayList<>();
         
         telefonList.add(evTel);
         telefonList.add(cepTel);
         
         kisi.setTelefonList(telefonList);
-        cepTel.setKisi(kisi);
-        evTel.setKisi(kisi);
+        //cepTel.setKisi(kisi);
+        //evTel.setKisi(kisi);
         
         kisiService.ekle(kisi);
+        
+        kisi = new Kisi();
+        cepTel = new Telefon();
+        evTel = new Telefon();
          
         
         
